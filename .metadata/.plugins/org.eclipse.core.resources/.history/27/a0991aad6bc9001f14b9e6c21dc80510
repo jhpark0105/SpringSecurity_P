@@ -1,0 +1,21 @@
+package mongo1_basic;
+
+import org.bson.types.ObjectId;
+
+public class MongoTest2 {
+	
+	static class Customer {
+		private ObjectId id;
+		private String name;
+		private int age;
+		private String gender;
+		
+		public Customer() {
+			// TODO Auto-generated constructor stub
+		}
+	}
+	
+	public static void main(String[] args) {
+		//MongoDB 연동 후 CRUD 연습
+	}
+}

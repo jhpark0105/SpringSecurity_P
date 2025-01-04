@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;webapp&apos;&#x0D;&#x0A;- Original project: &apos;myweblogin&apos;&#x0D;&#x0A;- Destination element: &apos;webapp&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     success.jsp&#x0D;&#x0A;     login.jsp&#x0D;&#x0A;     logout.jsp&#x0D;&#x0A;     login.html" description="Copy files" element1="src/main/webapp/success.jsp" element2="src/main/webapp/login.jsp" element3="src/main/webapp/logout.jsp" element4="src/main/webapp/login.html" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1734660600437" target="/mywebloginjwt/src/main/webapp" units="0" version="1.0"/>
+</session>

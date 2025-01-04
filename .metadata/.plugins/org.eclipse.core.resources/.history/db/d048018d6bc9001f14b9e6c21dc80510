@@ -1,0 +1,19 @@
+package mongo1_basic;
+
+import org.bson.types.ObjectId;
+
+public class MongoTest2 {
+	
+	static class Customer {
+		private ObjectId id;
+		private String name;
+		private int age;
+		private String gender;
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		//MongoDB 연동 후 CRUD 연습
+	}
+}

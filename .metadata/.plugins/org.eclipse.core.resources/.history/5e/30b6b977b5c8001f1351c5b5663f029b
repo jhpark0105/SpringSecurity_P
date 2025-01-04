@@ -1,0 +1,33 @@
+package mongo1_basic;
+
+import org.bson.Document;
+
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.MongoDatabase;
+
+public class MongoTest1 {
+	public static void main(String[] args) {
+		MongoClient client = MongoClients.create("mongodb://localhost:27017"); //mongodb 연결 객체 생성
+		
+		try {
+			MongoDatabase db = client.getDatabase("test");
+			MongoCollection<Document> collection = db.getCollection("customer");
+			System.out.println("자료 건수 : " + collection.countDocuments());
+			
+			//첫번째 자료 읽기
+			Document document = collection.find().first();
+			System.out.println("첫번째 자료 : " + document);
+			
+			System.out.println("전체 자료 ---------------");
+			FindIterable<Document> iter = collection.find();
+			MongoCursor<Document> cursor = iter.iterator();
+			
+		} catch (Exception e) {
+			System.out.println("err : " + e.getMessage());
+		}
+	}
+}

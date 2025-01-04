@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>구구단 [[${num}]] 단 결과</h2>
+<ul>
+	<li th:each="i:${#numbers.sequence(1,9)}">[[${num}]]*[[${i}]] = [[${num * i}]]</li>
+</ul>
+<br>
+<a th:href="@{/auth/gugu}">다시 입력</a><br>
+<a th:href="@{/auth/success}">로그인 성공 페이지</a>
+</body>
+</html>

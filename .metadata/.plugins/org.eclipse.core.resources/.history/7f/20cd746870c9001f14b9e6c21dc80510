@@ -1,0 +1,17 @@
+package mongo1_basic;
+
+import org.bson.Document;
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+
+public class MongoTest3 {
+	public static void main(String[] args) {
+		String uri = "mongodb://localhost:27017";
+		try(MongoClient mongoClient = MongoClients.create(uri)){
+			MongoDatabase db = mongoClient.getDatabase("test");
+			MongoCollection<Document> collection = db.getCollection("customer");
+	}
+}

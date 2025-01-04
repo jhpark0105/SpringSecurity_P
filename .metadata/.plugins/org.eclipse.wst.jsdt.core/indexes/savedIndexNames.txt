@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\work\sprsecurity\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+300113587.index
+926379478.index
+2798206479.index
+782716744.index
+1413492633.index
+104780725.index
+1828533408.index
