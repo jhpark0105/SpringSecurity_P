@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\work\sprsecurity\aaaaa\src\main\resources\templates\login.html"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,6 +49,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="mongo4_bigdata"/>
 			<item value="mongo1_basic"/>
 		</list>
 		<list key="projectNameTemplate">
