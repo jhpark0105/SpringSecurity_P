@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<head>
+<meta charset="UTF-8">
+<title>Kakao Data</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+<h1>카카오 데이터</h1>
+<table>
+    <thead>
+        <tr><th>질문</th><th>답변</th></tr>
+    </thead>
+    <tbody>
+        <tr th:each="kdata : ${dataList}">
+            <td th:text="${kdata.req}"></td>
+            <td th:text="${kdata.res}"></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

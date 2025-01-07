@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>일정 수정</title>
+<link rel="stylesheet" th:href="@{/css/mystyles.css}">
+</head>
+<body>
+<h2>일정 수정</h2>
+<form th:action="@{'/schedules/update/' + ${schedule.id}}" th:object="${schedule}" method="post">
+제목 : <input type="text" th:field="*{title}"><br/>
+내용 : <textarea th:field="*{description}"></textarea><br/>
+시작시간 : <input type="datetime-local" th:field="*{startTime}"/><br/>
+시작시간 : <input type="datetime-local" th:field="*{endTime}"/><br/>
+<button type="submit">수정</button>
+</form>
+<br/>
+<a href="/schedules">일정 목록</a>
+</body>
+</html>
